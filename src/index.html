@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova - SignIn</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nova - Sign In</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="poster">
+        <img src="./img/side-wallpaper.jpg" alt="A building with many windows lit up at night" class="poster__img" />
+      </section>
+      <section class="signin">
+        <header class="signin__logo">
+          <img src="./img/nova-logo.png" alt="The letter N stylized" class="signin__logo-image" />
+          <h1 class="signin__logo-title">Nova Solutions</h1>
+        </header>
+
+        <h2 class="signin__heading">User Registration</h2>
+
+        <form action="POST" class="signin__form">
+          <div class="signin__form-fields signin__form-fields--columns">
+            <label for="first-name" class="signin__form-fields-label">First Name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your First Name" class="signin__form-fields-input" />
+            <label for="last-name" class="signin__form-fields-label">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" class="signin__form-fields-input" />
+          </div>
+          <div class="signin__form-fields signin__form-fields--rows">
+            <label for="email" class="signin__form-fields-label">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Your Email Address" class="signin__form-fields-input" />
+            <label for="password" class="signin__form-fields-label">Password</label>
+            <input type="password" name="password" id="password" placeholder="Your Password" class="signin__form-fields-input" />
+          </div>
+          <div class="signin__form-fields signin__form-fields--tos">
+            <img src="./img/switch-icon.png" alt="Switch on/off Terms of Service" class="signin__form-fields-tos-image" />
+            <p class="signin__form-fields-tos-text">I accept the Terms of Service as well as the Privacy Policy</p>
+          </div>
+          <button class="btn btn--primary">Create Account</button>
+        </form>
+
+        <div class="divider"></div>
+
+        <p class="text--light">Already have an account? Login now.</p>
+
+        <footer class="signin__footer">
+          <ul>
+            <li>Help</li>
+            <li>Legal</li>
+            <li>Privacy</li>
+            <li>TOS</li>
+          </ul>
+          &copy; Cloudcampese
+        </footer>
+      </section>
+    </div>
+  </body>
 </html>
