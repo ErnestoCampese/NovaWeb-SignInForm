@@ -1,0 +1,19 @@
+{
+  "name": "nova-signin-form",
+  "version": "1.0.0",
+  "description": "This repository contains the code and necessary files for a sign-in form page used as a practice project to showcase my knowledge of CSS, Flexbox, and HTML form implementation. The sign-in form provides an opportunity for me to demonstrate my skills and understanding of front-end development concepts.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErnestoCampese/nova-signin-form.git"
+  },
+  "author": "Ernesto Campese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErnestoCampese/nova-signin-form/issues"
+  },
+  "homepage": "https://github.com/ErnestoCampese/nova-signin-form#readme"
+}
