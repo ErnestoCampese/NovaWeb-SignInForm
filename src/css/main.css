@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #ce7a89;
+  --secondary-color: #000b13;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -27,4 +32,27 @@ ul {
 ol,
 ul {
   list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100dvh;
+}
+
+.poster {
+  flex: 1;
+  background: var(--secondary-color) url(../img/side-wallpaper.jpg) no-repeat top left;
+  background-size: cover;
+  position: relative;
+}
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary-color);
+  opacity: 0.35;
+  z-index: 1;
 }
