@@ -1,10 +1,35 @@
+@use "../utilities/variables" as var;
+
 .logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 1rem;
   font-family: var(--font-family-logo);
-  font-size: 2rem;
-  font-weight: 300;
-  padding-top: 1rem;
-  color: var(--penn-blue);
+  font-size: var(--font-size-large);
+  color: var(--dark-color);
+
+  @media (width <= var.$medium-screen) {
+    & {
+      font-size: var(--font-size-medium);
+    }
+  }
+
+  @media (width <= var.$medium-screen) {
+    & {
+      font-size: var(--font-size-small);
+      & img {
+        scale: 0.8;
+      }
+    }
+  }
+
+  @media (width <= var.$medium-screen) {
+    & h1 {
+      display: none;
+    }
+    & img {
+      scale: 1.1;
+      margin-bottom: 2rem;
+    }
+  }
 }

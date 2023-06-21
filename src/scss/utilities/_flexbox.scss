@@ -1,0 +1,30 @@
+.flex {
+  display: flex;
+
+  &--column {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.gap {
+  &--extra-small {
+    gap: var(--spacing-extra-small);
+  }
+
+  &--small {
+    gap: var(--spacing-small);
+  }
+
+  &--medium {
+    gap: var(--spacing-medium);
+  }
+
+  &--large {
+    gap: var(--spacing-large);
+  }
+
+  &--extra-large {
+    gap: var(--spacing-extra-large);
+  }
+}

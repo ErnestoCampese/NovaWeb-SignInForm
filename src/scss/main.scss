@@ -1,4 +1,6 @@
 @use "utilities/variables";
+@use "utilities/animations";
+@use "utilities/flexbox";
 
 @use "base/reset";
 @use "base/typography";
@@ -10,5 +12,6 @@
 @use "layout/signup-footer";
 
 @use "components/buttons";
+@use "components/forms";
 @use "components/divider";
 @use "components/logo";

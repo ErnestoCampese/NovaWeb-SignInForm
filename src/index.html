@@ -18,56 +18,63 @@
     <title>Nova - Sign In</title>
   </head>
   <body>
-    <div class="container">
+    <fi class="container">
       <section class="poster"></section>
       <section class="signup-module">
+        
         <header class="logo">
-          <img decoding="async" src="./img/nova-logo.png" width="128px" height="128px" alt="The letter N stylized" class="logo__image" />
-          <h1 class="logo__title">Nova Solutions</h1>
+          <img decoding="async" src="./img/nova-logo.png" width="64px" height="64px" alt="The letter N stylized" class="logo__image" />
+          <h1 class="logo__title">nova solutions</h1>
         </header>
 
         <form action="#" method="POST" class="signup-form">
-          <h2 class="signup-form__heading">Register</h2>
-          <div class="signup-form__fields">
-            <div class="signup-form__field">
+          <h2>Register</h2>
+
+          <div class="fieldset">
+            <div class="field">
               <label for="first-name">First Name</label>
               <input type="text" name="first-name" id="first-name" placeholder="Your First Name" />
             </div>
-            <div class="signup-form__field">
+            <div class="field">
               <label for="last-name">Last Name</label>
               <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" />
             </div>
           </div>
-          <div class="signup-form__fields signup-form__fields--columns">
-            <div class="signup-form__field">
+
+          <div class="fieldset fieldset--column">
+            <div class="field">
               <label for="email">Email Address</label>
               <input type="email" name="email" id="email" placeholder="Your Email Address" />
             </div>
-            <div class="signup-form__field">
+            <div class="field">
               <label for="password">Password</label>
               <input type="password" name="password" id="password" placeholder="Your Password" />
             </div>
           </div>
-          <div class="signup-form__fields signup-form__fields--rows">
+
+          <div class="signup-form__tos">
             <input type="checkbox" name="TOS" id="TOS" class="signup-form__checkbox" />
-            <p>
-              I accept the <a href="#" class="text--link">Terms of Service</a> as well as the
-              <a href="#" class="text--link">Privacy Policy</a>
-            </p>
+            <label for="TOS">I accept the <a href="#" class="text--link">Terms of Service</a> as well as the<a href="#" class="text--link"> Privacy Policy</a></label>
           </div>
-          <button type="submit" class="btn btn--primary">Create Account</button>
+
+          <div class="signup-form__actions">
+            <button type="submit" class="btn btn--primary">Create Account</button>
+            <button type="reset" class="btn btn--reset">Reset</button>
+          </div>
+
           <div class="divider"></div>
-          <p class="text--light">Already have an account? <a href="#" class="text--link text--important">Login now</a></p>
+
+          <p class="signup-form__login text--light">Already have an account? <a href="#" class="text--link text--important">Login now</a></p>
         </form>
 
         <footer class="signup-footer">
           <ul class="signup-footer__list">
-            <li class="signup-footer__item">Help</li>
-            <li class="signup-footer__item">Legal</li>
-            <li class="signup-footer__item">Privacy</li>
-            <li class="signup-footer__item">TOS</li>
+            <li class="signup-footer__item text--light">Help</li>
+            <li class="signup-footer__item text--light">Legal</li>
+            <li class="signup-footer__item text--light">Privacy</li>
+            <li class="signup-footer__item text--light">TOS</li>
           </ul>
-          <small class="text--lightest">&copy; Cloudcampese</small>
+          <p class="text--lightest">&copy; Cloudcampese</p>
         </footer>
       </section>
     </div>

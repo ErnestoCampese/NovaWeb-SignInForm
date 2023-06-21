@@ -2,6 +2,7 @@
   flex: 1;
   position: relative;
   overflow: hidden;
+  opacity: 0.9; /* Just for style */
 
   &::before {
     position: absolute;
@@ -15,7 +16,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    animation: animatedBackground 8s infinite;
+    animation: animatedBackground 20s infinite;
   }
 
   &::after {
@@ -25,20 +26,15 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(to top, #9438fc, #6ebcde);
+    background: linear-gradient(to top, var(--gradient-colors));
     mix-blend-mode: color;
-    opacity: 0.6;
+    opacity: 0.8;
+    z-index: var(--z-index-front);
   }
-}
 
-@keyframes animatedBackground {
-  0% {
-    transform: translateX(0) scale(1);
-  }
-  50% {
-    transform: translateX(8px) scale(1.04);
-  }
-  100% {
-    transform: translateX(0) scale(1);
+  @media (width <= 1200px) {
+    & {
+      display: none;
+    }
   }
 }

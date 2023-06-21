@@ -3,11 +3,12 @@
   flex-flow: column nowrap;
   align-items: center;
   gap: 1rem;
+  font-family: var(--font-family);
+  font-size: var(--font-size-extra-small);
 
   &__list {
     display: flex;
-    gap: 1rem;
-    font-size: 0.85rem;
+    gap: 4rem;
     opacity: 0.75;
     font-weight: 300;
   }

@@ -1,10 +1,16 @@
+// Breakpoints
+$small-screen: 400px;
+$medium-screen: 620px;
+$large-screen: 1200px;
+
 :root {
   // Colors
   --primary-color: hsl(194, 82%, 46%);
   --secondary-color: hsl(226, 77%, 61%);
   --accent-color: hsl(266, 96%, 61%, 1);
   --light-color: hsl(0, 0%, 98%);
-  --dark-color: hsl(210, 10%, 23%);
+  --dark-color: hsl(210, 10%, 20%);
+  --gradient-colors: var(--accent-color), var(--primary-color);
 
   // Typography
   --font-family: "Roboto", sans-serif;
@@ -13,7 +19,7 @@
   --font-weight-base: 400;
 
   // Font Sizes: Golden Ratio
-  --font-size-extra-small: 1rem;
+  --font-size-extra-small: 1.2rem;
   --font-size-small: 1.618rem;
   --font-size-medium: 2.618rem;
   --font-size-large: 4.236rem;
@@ -24,9 +30,6 @@
   --spacing-medium: 1rem;
   --spacing-large: 1.25rem;
   --spacing-extra-large: 2.441rem;
-
-  // Breakpoints
-  // N/A
 
   // Border radius
   --border-radius-small: 0.4rem;

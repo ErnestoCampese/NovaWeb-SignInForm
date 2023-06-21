@@ -1,59 +1,43 @@
+@use "../utilities/variables" as var;
+
 .signup-form {
   flex: 1;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   justify-content: center;
-  gap: 2rem;
-  font-size: 0.85rem;
+  gap: var(--spacing-extra-large);
+  font-family: var(--font-family);
+  font-weight: 300;
 
-  &__heading {
-    font-weight: 900;
-    font-size: 1.65rem;
-  }
-
-  &__fields {
+  &__actions {
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-large);
 
-    p {
-      font-weight: 400;
-    }
-
-    &--columns {
-      flex-flow: column nowrap;
-    }
-
-    &--rows {
-      align-items: center;
+    @media (width <= var.$small-screen) {
+      justify-content: center;
     }
   }
 
-  &__field {
+  &__tos {
     display: flex;
-    flex-flow: column nowrap;
-    gap: 0.45rem;
+    align-items: center;
+    gap: var(--spacing-medium);
+    font-size: var(--font-size-extra-small);
+    text-wrap: balance;
 
-    label {
-      font-size: 0.85rem;
-      font-weight: 300;
+    @media (width <= var.$medium-screen) {
+      flex-direction: column;
+      text-align: center;
     }
+  }
 
-    input {
-      padding: 0.85rem 0.65rem;
-      border-radius: 0.4rem;
-      border: 1px solid rgba(0, 0, 0, 0.2);
-      box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.04);
+  &__login {
+    text-align: center;
+    font-size: var(--font-size-small);
+    font-weight: 300;
 
-      &::placeholder {
-        opacity: 0.6;
-        font-size: 0.85rem;
-      }
-
-      &:active,
-      &:focus {
-        outline: none;
-        border: 2px solid var(--aero);
-      }
+    @media (width <= var.$small-screen) {
+      font-size: var(--font-size-extra-small);
     }
   }
 }

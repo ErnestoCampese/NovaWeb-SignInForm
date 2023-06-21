@@ -1,0 +1,50 @@
+@use "../utilities/variables" as var;
+
+.fieldset {
+  display: flex;
+  row-gap: var(--spacing-extra-large);
+  column-gap: var(--spacing-large);
+
+  &--column {
+    flex-direction: column;
+  }
+
+  @media (width <= var.$medium-screen) {
+    & {
+      flex-direction: column;
+    }
+  }
+}
+
+.field {
+  display: flex;
+  flex-flow: column;
+  font-weight: 300;
+  font-family: var(--font-family);
+  font-size: var(--font-size-extra-small);
+  color: var(--dark-color);
+  gap: var(--spacing-small);
+
+  label {
+  }
+
+  input {
+    padding: 0.85rem 0.65rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.04);
+
+    &::placeholder {
+      opacity: 0.4;
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-image-slice: 1;
+      border-width: 1px;
+      border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+      animation: rotateBorder 2s linear infinite;
+    }
+  }
+}

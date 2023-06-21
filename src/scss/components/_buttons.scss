@@ -1,14 +1,31 @@
 .btn {
   align-self: flex-start;
-  padding: 0.85rem 1rem;
+  padding: 1rem 1.8rem;
+  font-weight: 500;
+  color: var(--light-color);
   cursor: pointer;
+  border: 0;
+  border-radius: 0.4rem;
+  font-family: var(--font-family);
+
+  transition: all 0.2s ease-in-out;
+  border: 1px solid transparent;
 
   &--primary {
-    background-color: var(--aero);
-    color: white;
-    border-radius: 0.4rem;
-    border: 0;
-    font-size: 0.85rem;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.07);
+    background-color: var(--primary-color);
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  &--reset {
+    background-color: var(--accent-color);
+
+    &:hover {
+      background-color: var(--light-color);
+      border: 1px solid var(--accent-color);
+      color: var(--dark-color);
+    }
   }
 }
