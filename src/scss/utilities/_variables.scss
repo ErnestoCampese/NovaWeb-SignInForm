@@ -1,16 +1,22 @@
 :root {
   // Colors
-  --primary-color: hsla(224, 98%, 19%, 1);
-  --secondary-color: hsla(198, 63%, 65%, 1);
+  --primary-color: hsl(194, 82%, 46%);
+  --secondary-color: hsl(226, 77%, 61%);
   --accent-color: hsl(266, 96%, 61%, 1);
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+  --light-color: hsl(0, 0%, 98%);
+  --dark-color: hsl(210, 10%, 23%);
 
   // Typography
   --font-family: "Roboto", sans-serif;
   --font-family-logo: "Goldman", cursive;
   --font-line-height-base: 1.75;
   --font-weight-base: 400;
+
+  // Font Sizes: Golden Ratio
+  --font-size-extra-small: 1rem;
+  --font-size-small: 1.618rem;
+  --font-size-medium: 2.618rem;
+  --font-size-large: 4.236rem;
 
   // Spacing
   --spacing-extra-small: 0.512rem;

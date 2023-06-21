@@ -1,15 +1,26 @@
-a {
-  text-decoration: none;
-  color: var(--aero);
-}
+.text {
+  &--important {
+    font-weight: 700;
+  }
 
-.text--lightest {
-  opacity: 0.4;
-}
+  &--light {
+    opacity: 0.6;
+  }
 
-.text--light {
-  opacity: 0.6;
-}
+  &--lightest {
+    opacity: 0.4;
+  }
 
-p {
+  &--link {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  &--small {
+    font-size: var(--font-size-small);
+  }
+
+  &--x-small {
+    font-size: var(--font-size-extra-small);
+  }
 }

@@ -1,13 +1,17 @@
 :root {
-  --primary-color: hsla(224, 98%, 19%, 1);
-  --secondary-color: hsla(198, 63%, 65%, 1);
+  --primary-color: hsl(194, 82%, 46%);
+  --secondary-color: hsl(226, 77%, 61%);
   --accent-color: hsl(266, 96%, 61%, 1);
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
+  --light-color: hsl(0, 0%, 98%);
+  --dark-color: hsl(210, 10%, 23%);
   --font-family: "Roboto", sans-serif;
   --font-family-logo: "Goldman", cursive;
   --font-line-height-base: 1.75;
   --font-weight-base: 400;
+  --font-size-extra-small: 1rem;
+  --font-size-small: 1.618rem;
+  --font-size-medium: 2.618rem;
+  --font-size-large: 4.236rem;
   --spacing-extra-small: 0.512rem;
   --spacing-small: 0.8rem;
   --spacing-medium: 1rem;
@@ -53,39 +57,32 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: var(--aero);
+.text--important {
+  font-weight: 700;
 }
-
+.text--light {
+  opacity: 0.6;
+}
 .text--lightest {
   opacity: 0.4;
 }
-
-.text--light {
-  opacity: 0.6;
+.text--link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.text--small {
+  font-size: var(--font-size-small);
+}
+.text--x-small {
+  font-size: var(--font-size-extra-small);
 }
 
 .container {
   display: flex;
-  flex-flow: row nowrap;
   height: 100dvh;
   position: relative;
   overflow: hidden;
-}
-.container::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 200%;
-  height: 100%;
-  border-radius: 6rem;
-  border-top: rgba(0, 0, 0, 0.06) solid 2rem;
-  border-bottom: rgba(0, 0, 0, 0.06) solid 2rem;
-  border-left: rgba(0, 0, 0, 0.06) solid 2rem;
-  outline: 200rem solid rgba(0, 0, 0, 0.06);
+  background-color: var(--light-color);
 }
 
 .poster {
