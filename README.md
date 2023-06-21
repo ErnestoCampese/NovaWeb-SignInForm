@@ -11,7 +11,7 @@ The sign-in form page is built using the following technologies:
 
 ## Credits ©️
 
-- Wallpaper: Photo by [Mike Kononov](https://unsplash.com/ko/@mikofilm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/lFv0V3_2H6s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+- Wallpaper: Photo by [Tara Winstead](https://www.pexels.com/photo/robot-pointing-on-a-wall-8386440/)
 - Layout Design Reference: [Dribble](https://dribbble.com/shots/17741738/attachments/12905729?mode=media)
 - Icons: 
   - Logo: [Letter n icons created by Javier Danglada - Flaticon](https://www.flaticon.com/free-icons/letter-n)
