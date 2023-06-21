@@ -1,0 +1,14 @@
+.signup-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+
+  &__list {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,14 @@
+.btn {
+  align-self: flex-start;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--aero);
+    color: white;
+    border-radius: 0.4rem;
+    border: 0;
+    font-size: 0.85rem;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.07);
+  }
+}

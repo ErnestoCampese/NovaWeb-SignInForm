@@ -9,6 +9,11 @@
       content="Nova Solution offers cutting-edge Robotic Management System (RMS) – your ultimate Control Panel for seamless control over robotic arms and various automation. Streamline your processes, enhance productivity, and unlock new possibilities with our advanced technology. Discover the future of automation with Nova Solution today." />
     <link rel="preload" href="../src/img/side-wallpaper-optx.avif" as="image" />
     <link rel="preload" href="../src/img/side-wallpaper.jpg" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Nova - Sign In</title>
   </head>
@@ -21,34 +26,39 @@
           <h1 class="logo__title">Nova Solutions</h1>
         </header>
 
-        <h2 class="signup-module__heading">User Registration</h2>
-
         <form action="#" method="POST" class="signup-form">
-          <div class="signup-form__fields signup-form__fields--rows">
-            <label for="first-name">First Name</label>
-            <input type="text" name="first-name" id="first-name" placeholder="Your First Name" />
-            <label for="last-name">Last Name</label>
-            <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" />
+          <h2 class="signup-form__heading">Register</h2>
+          <div class="signup-form__fields">
+            <div class="signup-form__field">
+              <label for="first-name">First Name</label>
+              <input type="text" name="first-name" id="first-name" placeholder="Your First Name" />
+            </div>
+            <div class="signup-form__field">
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" placeholder="Your Last Name" />
+            </div>
           </div>
           <div class="signup-form__fields signup-form__fields--columns">
-            <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Your Email Address" />
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Your Password" />
+            <div class="signup-form__field">
+              <label for="email">Email Address</label>
+              <input type="email" name="email" id="email" placeholder="Your Email Address" />
+            </div>
+            <div class="signup-form__field">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" placeholder="Your Password" />
+            </div>
           </div>
           <div class="signup-form__fields signup-form__fields--rows">
-            <img src="./img/switch-icon.png" alt="Switch on/off Terms of Service" />
+            <input type="checkbox" name="TOS" id="TOS" class="signup-form__checkbox" />
             <p>
               I accept the <a href="#" class="text--link">Terms of Service</a> as well as the
               <a href="#" class="text--link">Privacy Policy</a>
             </p>
           </div>
           <button type="submit" class="btn btn--primary">Create Account</button>
+          <div class="divider"></div>
+          <p class="text--light">Already have an account? <a href="#" class="text--link">Login now</a></p>
         </form>
-
-        <div class="divider"></div>
-
-        <p class="text--light">Already have an account? <a href="#" class="text--link">Login now</a></p>
 
         <footer class="signup-footer">
           <ul class="signup-footer__list">

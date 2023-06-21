@@ -1,4 +1,6 @@
 :root {
+  --penn-blue: hsla(224, 98%, 19%, 1);
+  --aero: hsla(198, 63%, 65%, 1);
   --primary-color: #ce7a89;
   --secondary-color: #000b13;
   --success-color: #28a745;
@@ -7,9 +9,10 @@
   --info-color: #17a2b8;
   --light-color: #f8f9fa;
   --dark-color: #343a40;
-  --font-family: Arial, sans-serif;
+  --font-family: "Roboto", sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
+  --font-family-logo: "Goldman", cursive;
   --spacing-unit: 8px;
   --spacing-small: calc(var(--spacing-unit) * 2);
   --spacing-medium: calc(var(--spacing-unit) * 4);
@@ -29,7 +32,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: var(--font-size-base);
 }
 
 *,
@@ -58,26 +61,174 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--aero);
+}
+
+.text--lightest {
+  opacity: 0.4;
+}
+
+.text--light {
+  opacity: 0.6;
+}
+
 .container {
   display: flex;
   flex-flow: row nowrap;
   height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+.container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 200%;
+  height: 100%;
+  border-radius: 6rem;
+  border-top: rgba(0, 0, 0, 0.06) solid 2rem;
+  border-bottom: rgba(0, 0, 0, 0.06) solid 2rem;
+  border-left: rgba(0, 0, 0, 0.06) solid 2rem;
+  outline: 200rem solid rgba(0, 0, 0, 0.06);
 }
 
 .poster {
   flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.poster::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--secondary-color);
   background-image: url(../img/side-wallpaper-optx.avif), url(../img/side-wallpaper.jpg);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  position: relative;
+  animation: animatedBackground 8s infinite;
 }
 
+@keyframes animatedBackground {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(8px) scale(1.04);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
 .signup-module {
   flex: 1;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
   align-items: center;
+  font-family: var(--font-family);
+  padding: 2rem 0 3rem 0;
+}
+
+.signup-form {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.85rem;
+}
+.signup-form__heading {
+  font-weight: 900;
+  font-size: 1.65rem;
+}
+.signup-form__fields {
+  display: flex;
+  gap: 1rem;
+}
+.signup-form__fields p {
+  font-weight: 400;
+}
+.signup-form__fields--columns {
+  flex-flow: column nowrap;
+}
+.signup-form__fields--rows {
+  align-items: center;
+}
+.signup-form__field {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.45rem;
+}
+.signup-form__field label {
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+.signup-form__field input {
+  padding: 0.85rem 0.65rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.04);
+}
+.signup-form__field input::placeholder {
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+.signup-form__field input:active, .signup-form__field input:focus {
+  outline: none;
+  border: 2px solid var(--aero);
+}
+
+.signup-footer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+.signup-footer__list {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--aero);
+  color: white;
+  border-radius: 0.4rem;
+  border: 0;
+  font-size: 0.85rem;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.07);
+}
+
+.divider {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-family-logo);
+  font-size: 2rem;
+  font-weight: 300;
+  padding-top: 1rem;
+  color: var(--penn-blue);
+}
+.logo img {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(4%) saturate(7004%) hue-rotate(169deg) brightness(91%) contrast(90%);
 }

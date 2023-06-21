@@ -1,5 +1,7 @@
 :root {
   // Colors
+  --penn-blue: hsla(224, 98%, 19%, 1);
+  --aero: hsla(198, 63%, 65%, 1);
   --primary-color: #ce7a89;
   --secondary-color: #000b13;
   --success-color: #28a745;
@@ -10,9 +12,10 @@
   --dark-color: #343a40;
 
   // Typography
-  --font-family: Arial, sans-serif;
+  --font-family: "Roboto", sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
+  --font-family-logo: "Goldman", cursive;
 
   // Spacing
   --spacing-unit: 8px;
