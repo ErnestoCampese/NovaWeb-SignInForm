@@ -5,11 +5,13 @@
   gap: 1rem;
   font-family: var(--font-family);
   font-size: var(--font-size-extra-small);
+  width: 100%;
 
   &__list {
     display: flex;
-    gap: 4rem;
+    gap: 5rem;
     opacity: 0.75;
     font-weight: 300;
+    padding: var(--spacing-extra-large) 0;
   }
 }

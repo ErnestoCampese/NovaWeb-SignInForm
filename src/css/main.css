@@ -9,10 +9,10 @@
   --font-family-logo: "Goldman", cursive;
   --font-line-height-base: 1.75;
   --font-weight-base: 400;
-  --font-size-extra-small: 1.2rem;
-  --font-size-small: 1.618rem;
-  --font-size-medium: 2.618rem;
-  --font-size-large: 4.236rem;
+  --font-size-extra-small: 1.6rem;
+  --font-size-small: 2.262rem;
+  --font-size-medium: 3.199rem;
+  --font-size-large: 4.523rem;
   --spacing-extra-small: 0.512rem;
   --spacing-small: 0.8rem;
   --spacing-medium: 1rem;
@@ -28,19 +28,19 @@
 
 @keyframes rotateBorder {
   0% {
-    border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to right, var(--gradient-colors));
   }
   25% {
-    border-image-source: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to bottom, var(--gradient-colors));
   }
   50% {
-    border-image-source: linear-gradient(to left, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to left, var(--gradient-colors));
   }
   75% {
-    border-image-source: linear-gradient(to top, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to top, var(--gradient-colors));
   }
   100% {
-    border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to right, var(--gradient-colors));
   }
 }
 @keyframes animatedBackground {
@@ -210,7 +210,7 @@ h2 {
   display: flex;
   gap: var(--spacing-large);
 }
-@media (width <= 400px) {
+@media (width <= 40rem) {
   .signup-form__actions {
     justify-content: center;
   }
@@ -222,7 +222,7 @@ h2 {
   font-size: var(--font-size-extra-small);
   text-wrap: balance;
 }
-@media (width <= 620px) {
+@media (width <= 60rem) {
   .signup-form__tos {
     flex-direction: column;
     text-align: center;
@@ -230,13 +230,8 @@ h2 {
 }
 .signup-form__login {
   text-align: center;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-extra-small);
   font-weight: 300;
-}
-@media (width <= 400px) {
-  .signup-form__login {
-    font-size: var(--font-size-extra-small);
-  }
 }
 
 .signup-footer {
@@ -246,12 +241,14 @@ h2 {
   gap: 1rem;
   font-family: var(--font-family);
   font-size: var(--font-size-extra-small);
+  width: 100%;
 }
 .signup-footer__list {
   display: flex;
-  gap: 4rem;
+  gap: 5rem;
   opacity: 0.75;
   font-weight: 300;
+  padding: var(--spacing-extra-large) 0;
 }
 
 .btn {
@@ -289,11 +286,6 @@ h2 {
 .fieldset--column {
   flex-direction: column;
 }
-@media (width <= 620px) {
-  .fieldset {
-    flex-direction: column;
-  }
-}
 
 .field {
   display: flex;
@@ -303,6 +295,8 @@ h2 {
   font-size: var(--font-size-extra-small);
   color: var(--dark-color);
   gap: var(--spacing-small);
+  flex: 1;
+  flex-wrap: wrap;
 }
 .field input {
   padding: 0.85rem 0.65rem;
@@ -317,7 +311,7 @@ h2 {
   outline: none;
   border-image-slice: 1;
   border-width: 1px;
-  border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  border-image-source: linear-gradient(to right, var(--gradient-colors));
   animation: rotateBorder 2s linear infinite;
 }
 
@@ -335,25 +329,17 @@ h2 {
   font-size: var(--font-size-large);
   color: var(--dark-color);
 }
-@media (width <= 620px) {
+@media (width <= 60rem) {
   .logo {
     font-size: var(--font-size-medium);
   }
 }
-@media (width <= 620px) {
-  .logo {
-    font-size: var(--font-size-small);
-  }
-  .logo img {
-    scale: 0.8;
-  }
-}
-@media (width <= 620px) {
+@media (width <= 40rem) {
   .logo h1 {
     display: none;
   }
   .logo img {
-    scale: 1.1;
-    margin-bottom: 2rem;
+    scale: 1.4;
+    margin: 2rem 0;
   }
 }

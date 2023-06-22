@@ -1,18 +1,18 @@
 @keyframes rotateBorder {
   0% {
-    border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to right, var(--gradient-colors));
   }
   25% {
-    border-image-source: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to bottom, var(--gradient-colors));
   }
   50% {
-    border-image-source: linear-gradient(to left, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to left, var(--gradient-colors));
   }
   75% {
-    border-image-source: linear-gradient(to top, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to top, var(--gradient-colors));
   }
   100% {
-    border-image-source: linear-gradient(to right, var(--primary-color), var(--accent-color));
+    border-image-source: linear-gradient(to right, var(--gradient-colors));
   }
 }
 

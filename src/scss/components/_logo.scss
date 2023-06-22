@@ -14,22 +14,13 @@
     }
   }
 
-  @media (width <= var.$medium-screen) {
-    & {
-      font-size: var(--font-size-small);
-      & img {
-        scale: 0.8;
-      }
-    }
-  }
-
-  @media (width <= var.$medium-screen) {
+  @media (width <= var.$small-screen) {
     & h1 {
       display: none;
     }
     & img {
-      scale: 1.1;
-      margin-bottom: 2rem;
+      scale: 1.4;
+      margin: 2rem 0;
     }
   }
 }

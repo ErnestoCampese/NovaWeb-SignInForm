@@ -33,11 +33,7 @@
 
   &__login {
     text-align: center;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-extra-small);
     font-weight: 300;
-
-    @media (width <= var.$small-screen) {
-      font-size: var(--font-size-extra-small);
-    }
   }
 }

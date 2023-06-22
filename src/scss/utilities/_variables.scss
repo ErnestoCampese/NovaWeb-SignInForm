@@ -1,7 +1,7 @@
 // Breakpoints
-$small-screen: 400px;
-$medium-screen: 620px;
-$large-screen: 1200px;
+$small-screen: 40rem;
+$medium-screen: 60rem;
+$large-screen: 120rem;
 
 :root {
   // Colors
@@ -19,10 +19,10 @@ $large-screen: 1200px;
   --font-weight-base: 400;
 
   // Font Sizes: Golden Ratio
-  --font-size-extra-small: 1.2rem;
-  --font-size-small: 1.618rem;
-  --font-size-medium: 2.618rem;
-  --font-size-large: 4.236rem;
+  --font-size-extra-small: 1.6rem;
+  --font-size-small: 2.262rem;
+  --font-size-medium: 3.199rem;
+  --font-size-large: 4.523rem;
 
   // Spacing
   --spacing-extra-small: 0.512rem;
